@@ -102,7 +102,7 @@ function Item(props) {
           {props.item.name}
         </Typography>
         <a href={props.item.link}>
-          <img src={props.item.image} className={classes.img}></img>
+          <img src={props.item.image} alt={props.item.name} className={classes.img}></img>
         </a>
         <Typography variant="h6" className={classes.root}>
           {props.item.description}

@@ -24,7 +24,7 @@ function Nav() {
   const classes = useStyles();
     return (
       <React.Fragment>
-        <AppBar position="fixed" className={classes.appbar} >
+        <AppBar position="fixed" id="top" className={classes.appbar} >
           <Toolbar >
             <IconButton color="inherit" href="#top">
             <HomeIcon color="inherit" />
