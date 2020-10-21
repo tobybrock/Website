@@ -42,7 +42,7 @@ function About() {
           <Typography variant="body2" className={classes.about}>
             About Me
           </Typography>
-          <Typography variant="h3" className={classes.root}>
+          <Typography variant="h3" className={classes.root} id='about'>
             <b>Who Am I Really?</b>
           </Typography>
           </Grid>
@@ -66,6 +66,10 @@ function About() {
           </Typography>
         </Card>
       </Grid>
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
     </>
   );

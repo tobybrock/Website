@@ -1,6 +1,7 @@
 import React from 'react';
-import { AppBar, Toolbar, Button, makeStyles, Grid, Typography} from "@material-ui/core"
+import { AppBar, Toolbar, Button, makeStyles, Grid, IconButton} from "@material-ui/core"
 import HomeIcon from '@material-ui/icons/Home';
+import Resume from './Resume.pdf';
 
 const useStyles = makeStyles({
   menuButton: {
@@ -25,15 +26,17 @@ function Nav() {
       <React.Fragment>
         <AppBar position="fixed" className={classes.appbar} >
           <Toolbar >
+            <IconButton color="inherit" href="#top">
             <HomeIcon color="inherit" />
+            </IconButton>
             <Grid 
             justify="center"
             container 
             >       
-            <Button color="inherit" className={classes.menuButton}>About</Button>
-            <Button color="inherit" className={classes.menuButton}>Projects</Button>
-            <Button color="inherit" className={classes.menuButton}>Contact Me</Button>
-            <Button color="inherit" className={classes.menuButton}>My Resume</Button>
+            <Button color="inherit" href="#about" className={classes.menuButton}>About</Button>
+            <Button color="inherit" href="#project" className={classes.menuButton}>Projects</Button>
+            <Button color="inherit" href="#contact" className={classes.menuButton}>Contact Me</Button>
+            <Button color="inherit" href={Resume} target="mynewtab" className={classes.menuButton}>My Resume</Button>
             </Grid> 
             
           </Toolbar>

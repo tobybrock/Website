@@ -52,12 +52,12 @@ function Skills() {
       const skillsData2= [
         {
           name: 'JavaScript',
-          level: 85,
+          level: 100,
           color: '#745c48',
         },
         {
           name: 'Node.js',
-          level: 100,
+          level: 85,
           color: '#745c48',
         },
         {
@@ -89,23 +89,13 @@ function Skills() {
           <b>My Skills</b>
           </Typography>
           </Grid>
-
-        
-
-            <SkillBars skills={skillsData1} duration='4' levelProgress='true' />
-            <SkillBars skills={skillsData2} duration='4' levelProgress='true' />
-
-         {/* <Grid
-             container
-             direction="column"
-             justify="space-between"
-             alignItems="flex-end"> 
-
-             <SkillBars skills={skillsData2} />
-            </Grid> */}
-
-       
-         </Card>
+            <SkillBars skills={skillsData1} duration='5' levelProgress='true' />
+            <SkillBars skills={skillsData2} duration='5' levelProgress='true' />
+            <br />
+            <br />
+            <br />
+            <br />
+        </Card>
          </Grid>
       )
 }
