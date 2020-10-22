@@ -1,11 +1,13 @@
 import React from 'react';
 import { Typography, makeStyles, Grid } from '@material-ui/core';
-import Typical from 'react-typical'
+import Typical from 'react-typical';
+import Headshot from '../img/Headshot.jpg';
+import header from "../img/header.jpg";
 
 const useStyles = makeStyles({
     root: {
     border: 0,
-    backgroundImage: "url(/header.jpg)",
+    backgroundImage: `url(${header})`,
     backgroundSize: 'cover',
     boxShadow: '0 3px 5px 2px #d0d2ce',
     color: 'white',
@@ -34,7 +36,7 @@ function Header(props) {
   justify="flex-start"
   alignItems="center"
 >
-    <img src="/Headshot.jpg" alt="Headshot" className={classes.img}/>
+    <img src={Headshot} alt="Headshot" className={classes.img}/>
     <br />
     <Typography variant='h3'>
     Hello I'm Toby

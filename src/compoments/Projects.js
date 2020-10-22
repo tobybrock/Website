@@ -1,6 +1,9 @@
 import React from "react";
 import { Typography, makeStyles, Grid, Card} from "@material-ui/core";
 import Carousel from "react-material-ui-carousel";
+import StoreApp from "../img/StoreApp.PNG";
+import CookbookApp from "../img/CookbookApp.PNG";
+import ResumeCreatorApp from "../img/ResumeCreatorApp.PNG";
 
 const useStyles = makeStyles({
   root: {
@@ -35,20 +38,20 @@ function Project() {
   var items = [
     {
       name: "Book e-commerce Site",
-      image: "/StoreApp.PNG",
+      image: StoreApp,
       link: "https://github.com/tobybrock/MERN-Fullstack-Store-App",
       description:
         "A book shop app created with React & node.js which contains products displayed on the frontend, with working cart and payment routes, products and order details are stored on the backend and belong to a user.",
     },
     {
       name: "Resume Generator App",
-      image: "/ResumeCreatorApp.PNG",
+      image: ResumeCreatorApp,
       link: "https://github.com/tobybrock/FullStack-React_Rails",
       description: "A Resume Creator created with React & Ruby on Rails and contains resumes displayed on the frontend and stored in the backend which are owned by a user account.",
     },
     {
         name: "Cookbook App",
-        image: "/CookbookApp.PNG",
+        image: CookbookApp,
         link: "https://github.com/tobybrock/Cookbook-Fullstack-App",
         description: "A recipe generator created with JQuery & Node.js and contains a working backend with user and favourites functionality.",
       },
